@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200802193718_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802193718_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802194650_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802194650_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802195852_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802195852_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802202321_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802202321_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802202906_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802202906_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802212939_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802212939_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802214053_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802214053_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200802214321_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200802214321_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200803194946_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200803194946_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NewId" Version="3.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Toolbelt.EntityFrameworkCore.IndexAttribute" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocuStore.Core.Interfaces\DocuStore.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\DocuStore.Shared\DocuStore.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
